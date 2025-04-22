@@ -1,0 +1,90 @@
+.todo__wrapper {
+  margin: 100px auto;
+  padding: 2rem;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  background: var(--base-color-dark);
+  border-radius: 5px;
+}
+
+.todo__title {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.input__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo__input {
+  outline: none;
+  background: none;
+  border: 1px solid var(--base-color-light);
+  padding: 0.5rem 1rem;
+  color: #fff;
+  flex-grow: 1;
+}
+
+.todo__btn {
+  min-width: 100px;
+  background-color: var(--base-color-light);
+  color: #fff;
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--color-accent);
+    transform: scale(1.05);
+  }
+}
+
+.todo__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.todo__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--base-color-light);
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+}
+
+.todo__input--edit {
+  outline: none;
+  background: none;
+  border: 1px solid var(--base-color-light);
+  padding: 0.5rem 1rem;
+  color: #fff;
+}
+
+.task__content {
+  width: 70%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.icon__item {
+  display: inline-block;
+  text-align: center;
+  padding-inline: 10px;
+
+  &:hover path,
+  &:active path {
+    fill: var(--color-accent);
+  }
+}
+
+.completed {
+  text-decoration: line-through;
+}
