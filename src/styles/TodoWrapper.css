@@ -1,4 +1,5 @@
 .todo__wrapper {
+  position: relative;
   margin: 100px auto;
   padding: 2rem;
   max-width: 450px;
@@ -87,4 +88,14 @@
 
 .completed {
   text-decoration: line-through;
+}
+
+.logout-button {
+  position: absolute;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #e9bdf1;
+  min-width: 50px;
+  top: 5px;
+  right: 5px;
 }

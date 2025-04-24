@@ -94,7 +94,9 @@ export default function TodoWrapper() {
           )
         )}
       </ul>
-      <button onClick={handleLogout}>Выйти</button>
+      <button className="logout-button" onClick={handleLogout}>
+        Выйти
+      </button>
     </div>
   );
 }
